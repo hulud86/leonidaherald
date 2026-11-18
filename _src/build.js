@@ -36,7 +36,8 @@ a{color:var(--teal);text-underline-offset:3px}a:hover{color:var(--pinkdeep)}
 /* masthead */
 .mast{padding:22px 0 0}
 .mast .ears{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;font-size:14.5px;color:var(--ink2)}
-.mast .ears p{margin:0;max-width:30ch}
+.mast .ears p{margin:0}
+.mast .ears p:first-child{white-space:nowrap}
 .mast .title{display:block;text-decoration:none;color:var(--ink);text-align:center;margin:6px 0 4px}
 .mast .title b{display:block;font:900 clamp(54px,11.2vw,138px)/.86 var(--head);letter-spacing:-.01em;text-transform:none}
 .mast .title b span{color:var(--pink)}
