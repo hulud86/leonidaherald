@@ -359,6 +359,16 @@ ${bodyHtml}
 <p>We're a fan site. We aren't affiliated with or endorsed by Rockstar Games or Take-Two Interactive, and all game names, characters and places belong to their owners.</p>
 </div></div>`);
 
+  // Launch countdown, worked out from the edition date
+  const launch = (() => {
+    const toDay = d => { const [y,m,dd] = d.split("-").map(Number); return Date.UTC(y, m-1, dd) / 864e5; };
+    const n = toDay("2026-11-19") - toDay(edition);
+    const words = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten"];
+    if (n > 1) return { headline: `${words[n] || n} days to Leonida: your launch-night guide`, banner: "GTA VI is out Thursday, November 19 on PS5 and Xbox Series X|S.", notice: "Mission walkthroughs start Thursday" };
+    if (n === 1) return { headline: "Tomorrow, Leonida: your launch-night guide", banner: "GTA VI is out tomorrow, Thursday, November 19, on PS5 and Xbox Series X|S.", notice: "Mission walkthroughs start tomorrow" };
+    if (n === 0) return { headline: "Launch day: Leonida is open", banner: "GTA VI is out today on PS5 and Xbox Series X|S.", notice: "Mission walkthroughs start today" };
+    return { headline: "GTA VI is out: your launch guide", banner: "GTA VI is out now on PS5 and Xbox Series X|S.", notice: "Mission walkthroughs are on the way" };
+  })();
   // Front page
   const lead = content.articles.find(a => a.slug === "gta-6-launch-day-guide");
   const second = content.articles.find(a => a.slug === "gta-6-standard-vs-ultimate-edition");
@@ -371,18 +381,18 @@ ${bodyHtml}
 </head>
 <body>
 ${masthead("front")}
-<div class="banner">GTA VI is out Thursday, November 19 on PS5 and Xbox Series X|S. <a href="${lead.slug}.html">Read our launch guide</a></div>
+<div class="banner">${launch.banner} <a href="${lead.slug}.html">Read our launch guide</a></div>
 <main id="main" class="wrap">
   <section class="lead" aria-label="Top stories">
     <div class="main">
       <a class="flag" href="advice-column.html">Advice Column</a>
-      <h2><a href="${lead.slug}.html">Two days to Leonida: your launch-night guide</a></h2>
+      <h2><a href="${lead.slug}.html">${launch.headline}</a></h2>
       <p class="dek">${esc(lead.dek)}</p>
       <div class="byline">By <b>The Leonida Herald</b>, ${longDate(lead.date)}</div>
     </div>
     <div class="side">
       <div><a class="flag" href="advice-column.html">Advice Column</a><h3><a href="${second.slug}.html">Standard or Ultimate? What the extra $20 gets you</a></h3><p>${esc(second.dek)}</p></div>
-      <div class="notice"><h3>Mission walkthroughs start Thursday</h3><p>The Crime Beat opens at launch, with every story mission in order and spoilers hidden until you tap. <a href="crime-beat.html">How it will work</a></p></div>
+      <div class="notice"><h3>${launch.notice}</h3><p>The Crime Beat opens at launch, with every story mission in order and spoilers hidden until you tap. <a href="crime-beat.html">How it will work</a></p></div>
     </div>
   </section>
   <section class="facts-strip" aria-label="Launch facts">
