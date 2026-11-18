@@ -1,0 +1,40 @@
+name: Daily edition
+
+# Runs twice a day so it lands around 4:30-5:30 am Pacific in both standard and
+# daylight time (GitHub schedules are in UTC). The second run finds nothing to change.
+on:
+  schedule:
+    - cron: "34 12 * * *"
+    - cron: "34 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: daily-edition
+  cancel-in-progress: false
+
+jobs:
+  edition:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Set today's date and rebuild
+        run: bash _src/daily.sh
+      - name: Publish if anything changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then echo "Already up to date."; exit 0; fi
+          git config user.name "hulud86"
+          git config user.email "hulud86@users.noreply.github.com"
+          git add -A
+          git commit -m "Daily edition for $(TZ=America/Los_Angeles date +%F)"
+          git pull --rebase
+          git push
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" >/dev/null || true

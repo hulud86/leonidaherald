@@ -33,6 +33,10 @@ a{color:var(--teal);text-underline-offset:3px}a:hover{color:var(--pinkdeep)}
 :focus-visible{outline:3px solid var(--pink);outline-offset:2px}
 .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
 .skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--sun);color:var(--ink);padding:8px 12px;z-index:9}
+.spoiler{border:2px solid var(--pink);background:#fff;margin:0 0 18px;padding:0 16px}
+.spoiler summary{cursor:pointer;font:800 18px/1 var(--head);color:var(--pink);padding:12px 0;text-transform:uppercase;letter-spacing:.04em}
+.spoiler[open] summary{border-bottom:1px solid var(--paper2);margin-bottom:10px}
+.unconfirmed{border-left:6px solid var(--teal);background:#fff;padding:10px 14px;margin:0 0 18px;font-size:17px}
 /* masthead */
 .mast{padding:22px 0 0}
 .mast .ears{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;font-size:14.5px;color:var(--ink2)}
@@ -238,15 +242,19 @@ ${extra || ""}`;
 </div></footer>`;
 
   const renderBody = body => {
-    const out = []; let list = null;
+    const out = []; let list = null, spoil = null;
+    const flushSpoil = () => { if (spoil) { out.push(`<details class="spoiler"><summary>Story spoiler: tap to reveal</summary>${spoil.join("")}</details>`); spoil = null; } };
     for (const raw of body.split("\n")) {
       const line = raw.trim();
       if (!line) continue;
+      if (line.startsWith("!! ")) { if (list) { out.push(`<ul>${list.join("")}</ul>`); list = null; } (spoil = spoil || []).push(`<p>${esc(line.slice(3))}</p>`); continue; }
+      flushSpoil();
       if (line.startsWith("- ")) { (list = list || []).push(`<li>${esc(line.slice(2))}</li>`); continue; }
       if (list) { out.push(`<ul>${list.join("")}</ul>`); list = null; }
       out.push(line.startsWith("## ") ? `<h2>${esc(line.slice(3))}</h2>` : `<p>${esc(line)}</p>`);
     }
     if (list) out.push(`<ul>${list.join("")}</ul>`);
+    flushSpoil();
     return out.join("\n");
   };
 
@@ -273,7 +281,7 @@ ${script || ""}
     const related = bySection(a.section).filter(x => x.slug !== a.slug).slice(0, 3);
     const fill = arts.filter(x => x.section !== a.section && !related.includes(x));
     const more = related.concat(fill).slice(0, 3);
-    const ld = { "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.dek, datePublished: a.date, dateModified: a.date, articleSection: sec.name, mainEntityOfPage: SITE + a.slug + ".html", author: { "@type": "Organization", name: "The Leonida Herald" }, publisher: { "@type": "Organization", name: "The Leonida Herald" } };
+    const ld = { "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.dek, datePublished: a.date, dateModified: a.updated || a.date, articleSection: sec.name, mainEntityOfPage: SITE + a.slug + ".html", author: { "@type": "Organization", name: "The Leonida Herald" }, publisher: { "@type": "Organization", name: "The Leonida Herald" } };
     const crumbsLd = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Front Page", item: SITE }, { "@type": "ListItem", position: 2, name: sec.name, item: SITE + sec.file }, { "@type": "ListItem", position: 3, name: a.title, item: SITE + a.slug + ".html" }] };
     const titleTag = a.kind === "character" ? `${a.title} in GTA 6: who they are | The Leonida Herald` : a.kind === "region" ? `${a.title}, GTA 6: region guide | The Leonida Herald` : `${a.title} | The Leonida Herald`;
     const checklist = a.checklist ? `<section class="checklist" aria-labelledby="cl-${a.slug}" data-key="lh-check-${a.slug}"><h2 id="cl-${a.slug}">Launch-night checklist</h2><ul>${a.checklist.map((c, i) => `<li><label><input type="checkbox" data-i="${i}"><span>${esc(c)}</span></label></li>`).join("")}</ul><div class="progress" aria-live="polite"></div></section>` : "";
@@ -294,7 +302,8 @@ ${script || ""}
   update();
 })();
 </script>` : "";
-    const bodyHtml = a.checklist ? renderBody(a.body) + checklist : renderBody(a.body);
+    const note = a.unconfirmed ? `<p class="unconfirmed"><b>Heads up:</b> some details on this page aren't confirmed yet. We say so where that's the case and will update the page as we check them.</p>` : "";
+    const bodyHtml = note + (a.checklist ? renderBody(a.body) + checklist : renderBody(a.body));
     files[a.slug + ".html"] = page(a.slug + ".html", titleTag, a.dek, a.section, articleCss, `
 <div class="crumbs"><a href="index.html">Front Page</a> / <a href="${sec.file}">${esc(sec.name)}</a></div>
 <div class="article">
@@ -303,7 +312,7 @@ ${script || ""}
       <a class="flag" href="${sec.file}">${esc(sec.name)}</a>
       <h1>${esc(a.title)}</h1>
       <p class="dek">${esc(a.dek)}</p>
-      <div class="byline">By <b>The Leonida Herald</b>, ${longDate(a.date)}</div>
+      <div class="byline">By <b>The Leonida Herald</b>, ${longDate(a.date)}${a.updated && a.updated !== a.date ? ` · Updated ${longDate(a.updated)}` : ""}</div>
     </header>
     <div class="body">
 ${bodyHtml}
@@ -327,16 +336,19 @@ ${bodyHtml}
   files[ww.file] = page(ww.file, "GTA 6 characters: every confirmed character | The Leonida Herald", "Who's who in GTA VI: Jason Duval, Lucia Caminos and every other character Rockstar has confirmed, explained without spoilers.", ww.id, sectionCss, secHead(ww) + listItems(bySection("whos-who"), true));
 
   const cb = secById["crime-beat"];
-  files[cb.file] = page(cb.file, "GTA 6 mission walkthroughs | The Leonida Herald", "GTA VI mission walkthroughs: every story mission in order, with objectives, tips and rewards. Coverage starts at launch on November 19, 2026.", cb.id, sectionCss, secHead(cb) + `
+  const missions = bySection("crime-beat").slice().sort((a, b) => (a.order || 999) - (b.order || 999));
+  files[cb.file] = page(cb.file, "GTA 6 mission walkthroughs | The Leonida Herald", "GTA VI mission walkthroughs: every story mission in order, with objectives, tips and rewards. Coverage starts at launch on November 19, 2026.", cb.id, sectionCss, secHead(cb) + (missions.length ? `
+<p style="margin:22px 0 0;max-width:64ch">Story missions in the order you play them. Each page lists objectives, tips and rewards, with story spoilers hidden until you tap. We add missions as we confirm them.</p>
+${listItems(missions, false)}` : `
 <div class="empty"><h2>The mission desk opens Thursday, November 19</h2>
 <p>GTA VI isn't out yet, so there are no missions to walk through. Rather than guess, we'll publish walkthroughs as the story is played after launch. Each mission page will cover:</p>
 <ul><li>How the mission unlocks and who gives it</li><li>Objectives, step by step</li><li>Tips for the tricky parts, and any choices that matter</li><li>Rewards and what it unlocks next</li></ul>
-<p>Story spoilers will sit behind a tap, and each page will say clearly whether its details are confirmed. Until then, get to know <a href="whos-who.html">the cast</a> and <a href="around-town.html">the map</a>.</p></div>`);
+<p>Story spoilers will sit behind a tap, and each page will say clearly whether its details are confirmed. Until then, get to know <a href="whos-who.html">the cast</a> and <a href="around-town.html">the map</a>.</p></div>`));
 
   const at = secById["around-town"];
   files[at.file] = page(at.file, "GTA 6 map and regions of Leonida | The Leonida Herald", "A guide to Leonida, GTA VI's state: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park.", at.id, sectionCss + mapCss, secHead(at) + `
-<div class="split"><div>${listItems(bySection("around-town"), false)}</div><div>${leonidaMap()}</div></div>
-<div class="empty"><h2>Side quests start at launch</h2><p>Strangers, odd jobs and side activities will be listed here region by region once the game is out on November 19.</p></div>`);
+<div class="split"><div>${listItems(bySection("around-town").filter(a => a.kind === "region"), false)}</div><div>${leonidaMap()}</div></div>
+${bySection("around-town").some(a => a.kind !== "region") ? `<h2 style="font:900 38px/1 var(--head);margin:30px 0 6px">Side quests and activities</h2>${listItems(bySection("around-town").filter(a => a.kind !== "region"), false)}` : `<div class="empty"><h2>Side quests start at launch</h2><p>Strangers, odd jobs and side activities will be listed here region by region once the game is out on November 19.</p></div>`}`);
 
   const cl = secById["classifieds"];
   const tagClass = s => s === "Ultimate Edition" ? "ue" : s === "Pre-order bonus" ? "po" : "";
