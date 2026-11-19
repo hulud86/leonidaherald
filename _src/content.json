@@ -1,5 +1,5 @@
 {
-  "edition": "2026-11-18",
+  "edition": "2026-11-19",
   "articles": [
     {
       "slug": "gta-6-launch-day-guide",
@@ -7,10 +7,10 @@
       "kind": "guide",
       "date": "2026-11-17",
       "title": "GTA 6 launch day guide: release date, platforms, pre-load and download size",
-      "dek": "GTA VI arrives November 19 on PS5 and Xbox Series X|S. Here's when you can pre-load, how much space to clear, and what to sort out before launch night.",
+      "dek": "GTA VI is out now on PS5 and Xbox Series X|S. Here's what reviewers made of it, how big the download is, and what to sort out before you start.",
       "facts": [
         [
-          "Release",
+          "Released",
           "Thursday, November 19, 2026"
         ],
         [
@@ -22,8 +22,12 @@
           "Not announced"
         ],
         [
-          "Digital pre-load",
-          "From November 10"
+          "Metacritic",
+          "99 (PS5)"
+        ],
+        [
+          "Frame rate",
+          "30fps on both consoles"
         ],
         [
           "Download size",
@@ -34,7 +38,7 @@
           "Buy before November 20"
         ]
       ],
-      "body": "Grand Theft Auto VI launches on Thursday, November 19, 2026, after two delays that pushed it back from fall 2025 and then from May 2026. It's coming to PlayStation 5 and Xbox Series X|S only. There is no PS4 or Xbox One version, and Rockstar hasn't announced a PC release.\n## Pre-loading\nIf you bought the game digitally, pre-loading has been open since November 10, so you can download it now and play the moment it unlocks. Boxed copies work differently: the box holds a download code rather than a disc, and those codes became available from November 12.\n## Clear some space\nThe download is large, up to 212 GB depending on your console. That's a big chunk of a standard PS5 or Series X drive, so check your free space before launch night rather than during it. An approved expansion drive is worth considering if you're short.\n## The pre-order bonus\nAnyone who buys before November 20 gets the Vintage Vice City Pack, which includes a classic '55 Vapid Stanier sedan, a garage, outfits for both leads and a weapon pattern. Digital buyers also get a free month of GTA+. See our editions guide for the full breakdown.\nWork through the checklist below before launch night. It remembers what you've ticked in this browser.",
+      "body": "Grand Theft Auto VI launched on Thursday, November 19, 2026, after two delays that pushed it back from fall 2025 and then from May 2026. It's coming to PlayStation 5 and Xbox Series X|S only. There is no PS4 or Xbox One version, and Rockstar hasn't announced a PC release.\n## What the reviews say\nCritics were close to unanimous. The PS5 version holds a Metacritic score of 99 from more than 150 reviews, matching the all-time record, and OpenCritic also has it at 99. IGN, GameSpot, Game Informer and Eurogamer all gave full marks.\nThe recurring complaints are small but worth knowing: the game is locked to 30 frames per second on both consoles, some reviewers saw frame drops in busy areas and big police shootouts, and several found the story slows down in later chapters.\nRockstar has said there are no microtransactions in either edition at launch.\n## Pre-loading\nIf you bought the game digitally, pre-loading opened on November 10. If you're only starting the download now, expect to wait a while. Boxed copies work differently: the box holds a download code rather than a disc, and those codes became available from November 12.\n## Clear some space\nThe download is large, up to 212 GB depending on your console. That's a big chunk of a standard PS5 or Series X drive, so check your free space before you start. An approved expansion drive is worth considering if you're short.\n## The pre-order bonus\nAnyone who buys before November 20 gets the Vintage Vice City Pack, which includes a classic '55 Vapid Stanier sedan, a garage, outfits for both leads and a weapon pattern. Digital buyers also get a free month of GTA+. See our editions guide for the full breakdown.\nWork through the checklist below before you start. It remembers what you've ticked in this browser.",
       "checklist": [
         "Confirm your copy is bought (digital or boxed code)",
         "Redeem your boxed download code, if you have one",
@@ -59,8 +63,25 @@
         {
           "name": "GamesRadar",
           "url": "https://www.gamesradar.com/gta-6-guide"
+        },
+        {
+          "name": "GameDaily: review roundup",
+          "url": "https://gamedaily.com/games/gta-6-review-roundup"
+        },
+        {
+          "name": "Windows Central: review roundup",
+          "url": "https://www.windowscentral.com/gaming/gta-vi-review-roundup-calling-it-the-highest-rated-game-ever-on-metacritic-still-doesnt-do-it-justice"
+        },
+        {
+          "name": "Al Jazeera: launch report",
+          "url": "https://www.aljazeera.com/news/2026/11/19/grand-theft-auto-vi-launches-to-rave-reviews-after-13-year-wait"
+        },
+        {
+          "name": "Wikipedia: Grand Theft Auto VI",
+          "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI"
         }
-      ]
+      ],
+      "updated": "2026-11-19"
     },
     {
       "slug": "gta-6-standard-vs-ultimate-edition",
@@ -124,7 +145,7 @@
           "Leonida Keys"
         ]
       ],
-      "body": "Jason is one of the two characters you play in GTA VI. Rockstar's profile describes a man who grew up surrounded by grifters and small-time crooks, joined the Army to get away from a rough youth, and came home to find the same life waiting for him. These days he does work for drug runners in the Keys.\n## What we know\n- He lives in a property owned by Brian Heder, an old-school smuggler, and helps Brian out in return.\n- His friend Cal Hampton is part of the same circle around Brian.\n- His relationship with Lucia Caminos is at the heart of the story. The trailers frame them as a criminal couple, and many fans compare them to Bonnie and Clyde.\n- The trailers suggest the pair end up working with veteran bank robber Raul Bautista.\n## Still to come\nRockstar hasn't explained how switching between Jason and Lucia works or which missions belong to whom. We'll add his story missions, safehouses and key moments to this page after launch, with spoilers hidden behind a tap.",
+      "body": "Jason is one of the two characters you play in GTA VI. Rockstar's profile describes a man who grew up surrounded by grifters and small-time crooks, joined the Army to get away from a rough youth, and came home to find the same life waiting for him. These days he does work for drug runners in the Keys.\n## What we know\n- He lives in a property owned by Brian Heder, an old-school smuggler, and helps Brian out in return.\n- His friend Cal Hampton is part of the same circle around Brian.\n- His relationship with Lucia Caminos is at the heart of the story. The trailers frame them as a criminal couple, and many fans compare them to Bonnie and Clyde.\n- The trailers suggest the pair end up working with veteran bank robber Raul Bautista.\n## His missions\nJason's story starts with Gone Fishing, the second mission, where he and Cal collect a drop for a pilot named Donnie. See the Crime Beat for our walkthrough.\n## Still to come\nWe'll add more of his story missions, safehouses and key moments to this page after launch, with spoilers hidden behind a tap.",
       "sources": [
         {
           "name": "Game Informer",
@@ -138,7 +159,8 @@
           "name": "GTABase: characters",
           "url": "https://gtabase.com/gta-6/characters"
         }
-      ]
+      ],
+      "updated": "2026-11-19"
     },
     {
       "slug": "lucia-caminos",
@@ -165,7 +187,7 @@
           "Served time in Leonida Penitentiary"
         ]
       ],
-      "body": "Lucia is GTA VI's second playable character, and the first woman to lead a GTA game in the modern era. Her father taught her to fight from a young age. According to Rockstar's profile, that toughness landed her in Leonida Penitentiary after she fought for her family, and she got out partly through luck.\n## What we know\n- Her family's story stretches back to Liberty City, the series' take on New York. Her mother has wanted a better life for them ever since.\n- She and Jason are a couple, and the game is built around the two of them deciding how far to go together.\n- The trailers show her alongside Jason in heists and robberies, apparently including jobs set up by Raul Bautista.\n## Still to come\nWe'll add her story missions, key choices and side content after launch. Major plot points will be hidden behind a spoiler tap, so you can read this page safely at any point in the game.",
+      "body": "Lucia is GTA VI's second playable character, and the first woman to lead a GTA game in the modern era. Her father taught her to fight from a young age. According to Rockstar's profile, that toughness landed her in Leonida Penitentiary after she fought for her family, and she got out partly through luck.\n## What we know\n- Her family's story stretches back to Liberty City, the series' take on New York. Her mother has wanted a better life for them ever since.\n- She and Jason are a couple, and the game is built around the two of them deciding how far to go together.\n- The trailers show her alongside Jason in heists and robberies, apparently including jobs set up by Raul Bautista.\n## Her missions\nHer story starts in the Prologue, the game's first mission; see the Crime Beat for our walkthrough.\n## Still to come\nWe'll add more of her story missions, key choices and side content after launch. Major plot points will be hidden behind a spoiler tap, so you can read this page safely at any point in the game.",
       "sources": [
         {
           "name": "Game Informer",
@@ -179,7 +201,8 @@
           "name": "GTABase: characters",
           "url": "https://gtabase.com/gta-6/characters"
         }
-      ]
+      ],
+      "updated": "2026-11-19"
     },
     {
       "slug": "cal-hampton",
@@ -598,6 +621,127 @@
         {
           "name": "GTABase: map",
           "url": "https://gtabase.com/gta-6/map/"
+        }
+      ]
+    },
+    {
+      "slug": "gta-6-mission-prologue",
+      "section": "crime-beat",
+      "kind": "mission",
+      "order": 1,
+      "date": "2026-11-19",
+      "title": "GTA 6 Prologue walkthrough: Lucia's first mission",
+      "dek": "The game opens with Lucia behind bars and a flashback to the job that put her there. It's short, mostly scripted and can't be failed in any meaningful way.",
+      "facts": [
+        [
+          "Mission",
+          "1 of Chapter 1"
+        ],
+        [
+          "Play as",
+          "Lucia Caminos"
+        ],
+        [
+          "Starts",
+          "Automatically, in a prison cell"
+        ],
+        [
+          "Unlock needed",
+          "None"
+        ],
+        [
+          "Reward",
+          "None reported"
+        ],
+        [
+          "Next",
+          "Gone Fishing (Jason)"
+        ]
+      ],
+      "body": "The Prologue starts as soon as you begin a new game. You play as Lucia, who is serving time. Guides name the jail as Hamlet Prison; Rockstar's pre-launch profile called it Leonida Penitentiary, so the in-game name may differ from the marketing.\n## Objectives\n- Talk to your cellmates. Holding the aim button brings up conversation options, so you can be friendly or pick a fight. It doesn't change the outcome.\n- Follow the guard, CO Wilson, down the corridor. He pauses for a phone call, then takes you to a counselor's office. You can chat to other inmates on the way.\n- The counselor's questions trigger a flashback: Lucia robbing a payday loan store. Aim at the teller, threaten them and scoop up the cash. A customer tries to tackle you; fight them off.\n- Lose the cops. You run across rooftops and through a mechanic's shop, jumping and climbing as prompted.\n- Return to the coffee shop marked on your map.\n## Tips\n- You can't actually escape the chase. Two of the three guides we checked say the game cuts back to the counselor's office whatever you do; one describes losing the police and reaching the coffee shop. Either way the result is the same, so don't waste time trying to outrun the script.\n- The arrest at the end can't be avoided. It's a story beat, not a failure.\n- This is a good moment to learn the basics: the aim-to-talk system, melee and parkour controls all come back later.\n## What happens (spoilers)\n!! The coffee shop matters because Lucia left her young son, Tommy, there while she did the robbery. Staff had already called the authorities.\n!! Tommy is taken into child welfare and Lucia is arrested. Getting out of prison and back to him becomes her driving goal.\n## Next\nThe story then switches to Jason for Gone Fishing, the second mission. Lucia returns as a playable character later in Chapter 1.",
+      "sources": [
+        {
+          "name": "VGC: Prologue walkthrough",
+          "url": "https://www.videogameschronicle.com/guide/gta-6-prologue-mission-walkthrough/"
+        },
+        {
+          "name": "PowerPyx: Prologue walkthrough",
+          "url": "https://www.powerpyx.com/gta-6-prologue-walkthrough/"
+        },
+        {
+          "name": "GTABase: Prologue",
+          "url": "https://www.gtabase.com/missions/gta-6/prologue"
+        },
+        {
+          "name": "Output Lag: main missions in order",
+          "url": "https://outputlag.com/guides/gta-6-walkthrough-missions/"
+        },
+        {
+          "name": "KeenGamer: chapters and missions in order",
+          "url": "https://www.keengamer.com/articles/guides/gta-6-walkthrough-all-chapters-and-story-missions-in-order/"
+        }
+      ]
+    },
+    {
+      "slug": "gta-6-mission-gone-fishing",
+      "section": "crime-beat",
+      "kind": "mission",
+      "order": 2,
+      "date": "2026-11-19",
+      "title": "GTA 6 Gone Fishing walkthrough: Jason's first job",
+      "dek": "Jason and Cal pick up a drug drop off the Keys, and a simple job turns into a stealth rescue and a seaplane escape. It also gets you into Jason's house.",
+      "facts": [
+        [
+          "Mission",
+          "2 of Chapter 1"
+        ],
+        [
+          "Play as",
+          "Jason Duval, with Cal Hampton"
+        ],
+        [
+          "Unlocks after",
+          "Prologue"
+        ],
+        [
+          "Vehicles",
+          "Boat, seaplane, car"
+        ],
+        [
+          "Optional",
+          "Cash in a camp trailer"
+        ],
+        [
+          "Reward",
+          "Access to Jason's house"
+        ],
+        [
+          "Next",
+          "Gear Up"
+        ]
+      ],
+      "body": "Gone Fishing is Jason's introduction. He and Cal are out on Cal's boat waiting for a pilot, Donnie, to drop a shipment into the water.\n## Objectives\n- Take the wheel when Cal asks and follow Donnie's plane. Steer to each floating package and slow down early so Cal can hook it. There are three. If you lose sight of one, use Focus (both sticks) to find it again.\n- Follow the marker to the meeting point and use the zoom to watch Donnie's handover on the dock.\n!! The deal goes wrong and Donnie is grabbed by a local gang, the Kingfishers. You need to get him back.\n- Bring the boat in quietly and go ashore at the camp, an RV park in the wetlands.\n- Sneak through. Crouch, approach guards from behind, grab and subdue them. Tall grass on the edge of the camp gives cover, and you don't need the rifle lying around.\n- Find the shack marked on your map, go in and reach Donnie. One guard will rush you; beat him unarmed to keep things quiet, then grab the health item (Zombix) in the shack.\n- Optional: a dollar marker leads to a trailer with cash in it. Someone jumps you with a knife on the way in, so be ready for the prompt.\n- Get to Donnie's floatplane on the dock and take off over open water. Don't turn back toward the camp if you're taking fire.\n- Fly to Brian's Marina. Slow your descent and land on the water short of the dock, then taxi in.\n- After the cutscene, drive Cal home, then drive to Jason's house and go up the outside stairs to finish.\n## Tips\n- Jason starts with almost nothing, so a fight in the open is hard. Knockouts beat gunfire here. There's an optional hammer behind one building if you want a melee weapon.\n- The landing is on water, not a runway. Come in slowly and level.\n- The trailer cash is worth the detour early in the game, when money is tight.\n## Rewards\nFinishing the mission opens Jason's house. You can change clothes and get drinks there, and one guide reports you can work on renovating it later, which is said to earn Focus points and improve things with Lucia; that last part isn't confirmed by other guides yet.\n## What happens next (spoilers)\n!! You meet Brian Heder, the smuggler Donnie flies for and Jason's landlord, at his marina.\n!! Lucia gets in touch to say she's being released. Guides differ on whether it's a phone call or a face-to-face talk.\n## Next\nGear Up, where Jason buys a long gun, is the next story mission.",
+      "unconfirmed": true,
+      "sources": [
+        {
+          "name": "VGC: Gone Fishing walkthrough",
+          "url": "https://www.videogameschronicle.com/guide/gta-6-gone-fishing-mission-walkthrough/"
+        },
+        {
+          "name": "GTA Boom: Gone Fishing walkthrough",
+          "url": "https://www.gtaboom.com/gta-6-gone-fishing-mission-walkthrough-ff86"
+        },
+        {
+          "name": "LibertyCity.net: Gone Fishing walkthrough",
+          "url": "https://libertycity.net/guides/gta-6/10508-gta-6-gone-fishing-walkthrough.html"
+        },
+        {
+          "name": "Output Lag: main missions in order",
+          "url": "https://outputlag.com/guides/gta-6-walkthrough-missions/"
+        },
+        {
+          "name": "KeenGamer: chapters and missions in order",
+          "url": "https://www.keengamer.com/articles/guides/gta-6-walkthrough-all-chapters-and-story-missions-in-order/"
         }
       ]
     }
