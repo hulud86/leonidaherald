@@ -7,6 +7,7 @@ function buildSite(content) {
   const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   const longDate = d => { const [y,m,dd] = d.split("-").map(Number); return months[m-1] + " " + dd + ", " + y; };
+  const shortDate = d => { const [, m, dd] = d.split("-").map(Number); return months[m-1].slice(0, 3) + " " + dd; };
   const dayName = d => { const [y,m,dd] = d.split("-").map(Number); return days[new Date(Date.UTC(y, m-1, dd)).getUTCDay()]; };
   const arts = content.articles.slice().sort((a,b) => b.date.localeCompare(a.date));
   const bySection = s => content.articles.filter(a => a.section === s);
@@ -68,6 +69,12 @@ footer.site ul{list-style:none;margin:0;padding:0}footer.site li{margin-bottom:4
 `;
 
   const frontCss = `
+.latest{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:0 28px}
+.latest li{border-bottom:1px solid var(--paper2)}
+.latest a{display:block;padding:12px 0;text-decoration:none;color:var(--ink)}
+.latest a:hover b{color:var(--pinkdeep)}
+.latest .sec{display:block;font:700 13px/1.2 var(--head);text-transform:uppercase;letter-spacing:.06em;color:var(--teal);margin-bottom:4px}
+.latest b{font:800 22px/1.1 var(--head)}
 .banner{background:var(--sun);border-bottom:2px solid var(--ink);text-align:center;font:800 18px/1.2 var(--head);letter-spacing:.02em;padding:9px 12px}
 .banner a{color:var(--ink)}
 .lead{display:grid;grid-template-columns:1.65fr 1fr;gap:0;border-bottom:2px solid var(--teal);margin-top:28px}
@@ -382,8 +389,16 @@ ${bySection("around-town").some(a => a.kind !== "region") ? `<h2 style="font:900
     return { headline: "GTA VI is out: your launch guide", banner: "GTA VI is out now on PS5 and Xbox Series X|S.", notice: "Mission walkthroughs are on the way" };
   })();
   // Front page
-  const lead = content.articles.find(a => a.slug === "gta-6-launch-day-guide");
-  const second = content.articles.find(a => a.slug === "gta-6-standard-vs-ultimate-edition");
+  const launchGuide = content.articles.find(a => a.slug === "gta-6-launch-day-guide");
+  const postLaunch = edition >= "2026-11-19";
+  // After launch the front page leads with the newest pages (newest date first, later missions first)
+  const newest = content.articles.slice().sort((a, b) => b.date.localeCompare(a.date) || (b.order || 0) - (a.order || 0));
+  const missionsSoFar = bySection("crime-beat");
+  const lead = postLaunch ? newest[0] : launchGuide;
+  const sideItems = postLaunch ? newest.slice(1, 3) : [content.articles.find(a => a.slug === "gta-6-standard-vs-ultimate-edition")];
+  const latest = newest.slice(3, 11);
+  const flagFor = a => `<a class="flag" href="${secById[a.section].file}">${esc(secById[a.section].name)}</a>`;
+  const bylineFor = a => `By <b>The Leonida Herald</b>, ${longDate(a.date)}${a.updated && a.updated !== a.date ? ` · Updated ${longDate(a.updated)}` : ""}`;
   const cast = bySection("whos-who");
   const regions = bySection("around-town");
   const frontLd = { "@context": "https://schema.org", "@type": "WebSite", name: "The Leonida Herald", url: SITE, description: "Independent guides to Grand Theft Auto VI." };
@@ -393,20 +408,24 @@ ${bySection("around-town").some(a => a.kind !== "region") ? `<h2 style="font:900
 </head>
 <body>
 ${masthead("front")}
-<div class="banner">${launch.banner} <a href="${lead.slug}.html">Read our launch guide</a></div>
+<div class="banner">${postLaunch && missionsSoFar.length ? `GTA VI is out now on PS5 and Xbox Series X|S. ${missionsSoFar.length} story mission walkthroughs so far. <a href="crime-beat.html">Open the Crime Beat</a>` : `${launch.banner} <a href="${launchGuide.slug}.html">Read our launch guide</a>`}</div>
 <main id="main" class="wrap">
   <section class="lead" aria-label="Top stories">
     <div class="main">
-      <a class="flag" href="advice-column.html">Advice Column</a>
-      <h2><a href="${lead.slug}.html">${launch.headline}</a></h2>
+      ${flagFor(lead)}
+      <h2><a href="${lead.slug}.html">${postLaunch ? esc(lead.title) : launch.headline}</a></h2>
       <p class="dek">${esc(lead.dek)}</p>
-      <div class="byline">By <b>The Leonida Herald</b>, ${longDate(lead.date)}</div>
+      <div class="byline">${bylineFor(lead)}</div>
     </div>
     <div class="side">
-      <div><a class="flag" href="advice-column.html">Advice Column</a><h3><a href="${second.slug}.html">Standard or Ultimate? What the extra $20 gets you</a></h3><p>${esc(second.dek)}</p></div>
-      <div class="notice"><h3>${launch.notice}</h3><p>The Crime Beat opens at launch, with every story mission in order and spoilers hidden until you tap. <a href="crime-beat.html">How it will work</a></p></div>
+      ${sideItems.map(a => `<div>${flagFor(a)}<h3><a href="${a.slug}.html">${a.slug === "gta-6-standard-vs-ultimate-edition" ? "Standard or Ultimate? What the extra $20 gets you" : esc(a.title)}</a></h3><p>${esc(a.dek)}</p></div>`).join("")}
+      ${postLaunch && missionsSoFar.length ? `<div class="notice"><h3>The Crime Beat: ${missionsSoFar.length} missions and counting</h3><p>Every story mission in order, with objectives, tips and rewards, and spoilers hidden until you tap. New walkthroughs every other day. <a href="crime-beat.html">See all missions</a></p></div>` : `<div class="notice"><h3>${launch.notice}</h3><p>The Crime Beat opens at launch, with every story mission in order and spoilers hidden until you tap. <a href="crime-beat.html">How it will work</a></p></div>`}
     </div>
   </section>
+  ${postLaunch && latest.length ? `<section class="block" aria-labelledby="latest-h">
+    <header><h2 id="latest-h">Latest from the Herald</h2><a href="crime-beat.html">All mission walkthroughs</a></header>
+    <ul class="latest">${latest.map(a => `<li><a href="${a.slug}.html"><span class="sec">${esc(secById[a.section].name)} · ${shortDate(a.updated || a.date)}</span><b>${esc(a.title)}</b></a></li>`).join("")}</ul>
+  </section>` : ""}
   <section class="facts-strip" aria-label="Launch facts">
     <div><b>Nov 19</b><span>Release day, 2026</span></div>
     <div><b>PS5 &amp; Xbox</b><span>Series X|S only. No PC yet</span></div>
