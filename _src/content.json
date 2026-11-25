@@ -1,5 +1,5 @@
 {
-  "edition": "2026-11-24",
+  "edition": "2026-11-25",
   "articles": [
     {
       "slug": "gta-6-launch-day-guide",
@@ -1227,6 +1227,183 @@
         {
           "name": "Beebom: Feng Shui mission guide",
           "url": "https://beebom.com/gta-6-feng-shui-mission/"
+        },
+        {
+          "name": "GTABase: story missions list",
+          "url": "https://www.gtabase.com/gta-6/missions/"
+        }
+      ]
+    },
+    {
+      "slug": "gta-6-mission-coming-home",
+      "section": "crime-beat",
+      "kind": "mission",
+      "order": 11,
+      "date": "2026-11-25",
+      "title": "GTA 6 Coming Home walkthrough: Lucia's release, the errands and the night at the Rusty Anchor",
+      "dek": "Jason picks Lucia up from prison and takes her out to the Rusty Anchor with their friends. The optional errands beforehand set where your relationship starts.",
+      "facts": [
+        [
+          "Mission",
+          "Chapter 1"
+        ],
+        [
+          "Play as",
+          "Jason Duval"
+        ],
+        [
+          "Giver",
+          "Lucia Caminos, by phone"
+        ],
+        [
+          "Where",
+          "Hamlet Correctional, then the Rusty Anchor, Key Lento"
+        ],
+        [
+          "Optional prep",
+          "Five errands for Lucia's homecoming"
+        ],
+        [
+          "Choices",
+          "Bar conversations, the dance (minor)"
+        ],
+        [
+          "Reward",
+          "No cash reported"
+        ],
+        [
+          "Next",
+          "Clean Up After Donnie"
+        ]
+      ],
+      "body": "Coming Home is the payoff for everything Jason has been doing since the Prologue: Lucia gets out. It is a long, mostly relaxed mission with a short fistfight near the end. You can't fail it in any of the ways guides describe.\n## Before you go: the homecoming errands\nAfter Feng Shui, a set of small errands opens up to get things ready for Lucia. Two of the three guides we checked call them optional; the third says they can be skipped. They are worth doing, because they lift Lucia's opinion of Jason from the start.\n- Buy her a necklace at the jewelry shop. Two guides say it comes up again in Chapter 2, so don't skip this one.\n- Pick up groceries. Grab a few items before the game tells you to leave.\n- Buy flowers.\n- Collect Lucia's clothes from her friend Andy at a bar, and keep them in the car's trunk.\n- Get Jason a haircut at the barber.\nTwo guides say doing all five starts the relationship at three of four hearts; you can check it in the Jason and Lucia menu. The same two describe optional repairs around Jason's house (a bedroom wall, the stairs, the roof and the balcony railing), which earn a reaction from Lucia later on.\n## How to start\nThe marker sits on the prison, but two guides say you first need to sleep at home until Lucia calls. If the call doesn't come, sleep again or drive around for a while. One guide doesn't mention this step at all, so your game may let you go straight there.\n## Objectives\n- Drive to Hamlet Correctional and speak to the guard at reception. A flashback plays.\n- Meet Lucia at the gate and walk her to the car.\n- Drive to the Rusty Anchor in north Key Lento. Order drinks at the bar (two guides put it at $6 for two beers), and if you brought her clothes, Lucia changes in the bathroom.\n- Find Lucia out behind the bar and talk.\n- Mingle. Cal, Donnie and others are around, with a few optional chats. Guides agree none of them change anything.\n- Dance with Lucia when prompted. One guide treats this as a choice you can turn down; accepting gives a small relationship bump.\n- Find Mattia, who is on the phone behind the bar, and bring him a beer. He then challenges Jason to pool.\n- Play a few shots until a group from the bar starts trouble and Jason takes it outside.\n- Win a short fistfight. Watch the other man's shoulders: block when he winds up, then hit back.\n- When the police turn up, run with Lucia and follow her until the closing scene.\n## Tips\n- The fight is the first real melee tutorial. Blocking on the wind-up is far more reliable than trading punches.\n- One guide says Rhonda's pet lizard escapes the bar during the night; focus mode will show it in a bush across the street. This isn't confirmed elsewhere.\n- One guide says that washing Jason's hands at the bar sink gives a short Focus boost. Also not confirmed elsewhere.\n## What happens (spoilers)\n!! Kat, Lucia's friend from prison, turns up pregnant, and Jason gets to feel the baby kick.\n!! The night ends with the police arriving and Jason and Lucia slipping away together to the beach, then back to Jason's place, where Lucia stays.\n!! The next morning Donnie calls with a job, which leads into Clean Up After Donnie.\n## Next\nClean Up After Donnie follows. One guide adds that from here you can switch between Jason and Lucia; that isn't confirmed elsewhere yet.\n## A note on order\nGuides number the early Chapter 1 jobs differently. We follow GTABase's chronological list, which puts Coming Home eleventh.",
+      "unconfirmed": true,
+      "sources": [
+        {
+          "name": "VGC: Coming Home walkthrough",
+          "url": "https://www.videogameschronicle.com/guide/gta-6-coming-home-mission-walkthrough/"
+        },
+        {
+          "name": "GTABase: Coming Home",
+          "url": "https://www.gtabase.com/gta-6/missions/coming-home"
+        },
+        {
+          "name": "Beebom: Coming Home mission guide",
+          "url": "https://beebom.com/gta-6-coming-home-mission/"
+        },
+        {
+          "name": "GTABase: story missions list",
+          "url": "https://www.gtabase.com/gta-6/missions/"
+        }
+      ]
+    },
+    {
+      "slug": "gta-6-mission-clean-up-after-donnie",
+      "section": "crime-beat",
+      "kind": "mission",
+      "order": 12,
+      "date": "2026-11-25",
+      "title": "GTA 6 Clean Up After Donnie walkthrough: recovering the lost package",
+      "dek": "Donnie has lost a drop in the swamps and Jason has to get it back from the Kingfishers. A short boat job that opens up selling to Donnie at his trailer.",
+      "facts": [
+        [
+          "Mission",
+          "Chapter 1"
+        ],
+        [
+          "Play as",
+          "Jason Duval"
+        ],
+        [
+          "Giver",
+          "Donnie, by phone"
+        ],
+        [
+          "Where",
+          "Swamps southwest of Hamlet, then Donnie's trailer, Key Lento"
+        ],
+        [
+          "Enemies",
+          "Kingfishers"
+        ],
+        [
+          "Reward",
+          "$600, reportedly left in Jason's mailbox"
+        ],
+        [
+          "Unlocks",
+          "Selling narcotics to Donnie"
+        ]
+      ],
+      "body": "Donnie's drop went wrong and the package has gone missing in the swamps. It's a short mission: a search, a boat ride and a gunfight at a shack.\n## How to start\nDonnie calls the morning after Coming Home. Head for the marked search area near a fishing spot in the swamps southwest of Hamlet.\n## Objectives\n- Search the area. GTABase says a fisherman on the dock points you to the package on the shore, under a roof.\n- Examine the package. It has been opened and the contents are gone, taken downriver by the Kingfishers.\n- Take the boat moored nearby and follow the marker south to the Kingfishers' shack.\n- Deal with the men at the shack. You can try talking, but VGC says it always ends in a fight. GTABase counts three guards.\n- Go inside and grab the cocaine.\n- VGC says more Kingfishers arrive by boat shortly after; clear them, then call Donnie.\n- Take the package to Donnie's trailer in Key Lento and leave it where he tells you. GTABase describes a container; VGC an old toolbox behind the trailer.\n## Tips\n- The boat gives almost no cover. If you're taking hits on the approach, shoot first rather than closing in.\n- VGC says there's a sniper rifle inside the shack. Grab it before the second group arrives.\n## Reward\nGTABase lists $600, paid into the mailbox at Jason's house after the mission. VGC gives no figure.\n## What it unlocks\nVGC says that from here you can sell narcotics to Donnie at his trailer, and that he sends locations of more of his lost packages to collect. That makes this an early source of money. GTABase doesn't mention it, so treat the details as provisional.\n## Next\nBuck Me is next in GTABase's chronological list. One wiki says Down to Earth, the mission after that, needs this one finished first.",
+      "unconfirmed": true,
+      "sources": [
+        {
+          "name": "VGC: Clean Up After Donnie walkthrough",
+          "url": "https://www.videogameschronicle.com/guide/gta-6-clean-up-after-donnie-mission-walkthrough/"
+        },
+        {
+          "name": "GTABase: Clean Up After Donnie",
+          "url": "https://www.gtabase.com/gta-6/missions/clean-up-after-donnie"
+        },
+        {
+          "name": "GTABase: story missions list",
+          "url": "https://www.gtabase.com/gta-6/missions/"
+        },
+        {
+          "name": "GTA Wiki: Buck Me",
+          "url": "https://gta.wiki/w/Buck_Me"
+        }
+      ]
+    },
+    {
+      "slug": "gta-6-mission-buck-me",
+      "section": "crime-beat",
+      "kind": "mission",
+      "order": 13,
+      "date": "2026-11-25",
+      "title": "GTA 6 Buck Me walkthrough: the bank, the loan and the BuckMe app",
+      "dek": "Jason and Lucia try to open a bank account in Key Lento and end up with the BuckMe app instead. A short story mission that introduces the game's banking.",
+      "facts": [
+        [
+          "Mission",
+          "Chapter 1"
+        ],
+        [
+          "Play as",
+          "Jason Duval, with Lucia Caminos"
+        ],
+        [
+          "Where",
+          "Fleeca bank branch, Key Lento"
+        ],
+        [
+          "Choices",
+          "What Jason says about his savings (dialogue)"
+        ],
+        [
+          "Reward",
+          "None reported"
+        ],
+        [
+          "Introduces",
+          "The BuckMe banking app"
+        ],
+        [
+          "Next",
+          "Down to Earth"
+        ]
+      ],
+      "body": "Buck Me is a talking mission with no combat. Its real job is to introduce BuckMe, the phone app the game uses for saving and handling money.\n## How to start\nHead to the bank branch in Key Lento. One wiki says the job starts with Lucia calling Jason because she needs an account for her earnings, and Jason doesn't have one.\n## Objectives\n- Go to the bank and ask about opening an account. You're sent to the branch manager.\n- Follow the manager into his office. Lucia joins you there.\n- Answer the manager's questions. VGC says you can tell him you have no savings, or that you keep cash at Jason's house. We haven't seen this choice change anything.\n- Once the meeting is over, the scene moves to Jason's house, where the phone tutorial for the BuckMe app plays.\n- The mission ends at home that evening.\n## Why it matters\nBuckMe is where you keep your money safe and save toward bigger buys. Two later Chapter 1 jobs on GTABase's list, Deposit Cash Into BuckMe and Save for the Future, are named for it.\n## Not yet confirmed\nThe two detailed accounts we found don't agree on what the bank actually offers. VGC says the pair set up a savings account; the wiki says the bank turns them down on credit and points them to BuckMe accounts instead. Either way you leave with BuckMe. We'll update this page when more guides cover it.\n## What happens (spoilers)\n!! According to the wiki, Lucia brings up a loan to buy Jason's house from Brian Heder, and it goes nowhere. Lucia isn't pleased.\n## Next\nDown to Earth. The wiki says it only opens once Clean Up After Donnie is also done.",
+      "unconfirmed": true,
+      "sources": [
+        {
+          "name": "VGC: Buck Me walkthrough",
+          "url": "https://www.videogameschronicle.com/guide/gta-6-buck-me-mission-walkthrough/"
+        },
+        {
+          "name": "GTA Wiki: Buck Me",
+          "url": "https://gta.wiki/w/Buck_Me"
         },
         {
           "name": "GTABase: story missions list",
