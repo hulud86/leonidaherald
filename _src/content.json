@@ -1,5 +1,5 @@
 {
-  "edition": "2026-11-26",
+  "edition": "2026-11-27",
   "articles": [
     {
       "slug": "gta-6-launch-day-guide",
@@ -1408,6 +1408,250 @@
         {
           "name": "GTABase: story missions list",
           "url": "https://www.gtabase.com/gta-6/missions/"
+        }
+      ]
+    },
+    {
+      "slug": "gta-6-mission-down-to-earth",
+      "section": "crime-beat",
+      "kind": "mission",
+      "order": 14,
+      "date": "2026-11-27",
+      "title": "GTA 6 Down to Earth walkthrough: Brian's seaplane run to Bobcat Bay",
+      "dek": "Brian Heder puts Jason and Lucia in a seaplane for a cocaine pickup and three drops. Your first real flying mission, with a soft water landing to get right and a surprise waiting at home.",
+      "facts": [
+        [
+          "Mission",
+          "Chapter 1"
+        ],
+        [
+          "Giver",
+          "Brian Heder"
+        ],
+        [
+          "Play as",
+          "Jason Duval, with Lucia Caminos"
+        ],
+        [
+          "Where",
+          "Brian's marina, Key Lento; Bobcat Bay"
+        ],
+        [
+          "Choices",
+          "How you deal with the gunmen (affects Jason's Criminal Profile)"
+        ],
+        [
+          "Reward",
+          "$500 into BuckMe (one guide)"
+        ],
+        [
+          "Next",
+          "Day Release and Clear Skies"
+        ]
+      ],
+      "body": "Down to Earth is the first job that puts you in the air. Most of it is flying a small seaplane between drop points; the one real danger is landing on the water too hard.\n## How to start\nFinish Buck Me and Clean Up After Donnie. Beebom says that after Jason spends the night with Lucia, Brian texts him the next morning, and a Meet Brian marker appears at the marina southwest of Jason's house in Key Lento.\n## Objectives\n- Meet Brian at the marina and follow him to his boat.\n- Clean the boat with the pressure washer. Keep going through the short scene where Lucia arrives, until Brian hands you the errand.\n- Board Brian's seaplane with Lucia and fly to Bobcat Bay, following the marker.\n- Land near the marked boat and collect the package.\n- The handover turns into a shootout. Deal with the gunmen until Lucia is back aboard.\n- Make three drops. Both detailed guides have you land on the water for the early ones; for the last, fly low alongside a moving boat so Lucia can hand it over.\n- Fly back and land at the dock by Jason's house.\n- Hide the leftover drugs in the washing machine in the shed, then join Lucia to finish the mission.\n## Flying tips\n- Ease down onto the water. Both guides warn that hitting it hard destroys the plane and fails the mission.\n- Beebom notes the flight controls are inverted by default: pull back to climb, push forward to descend. Check your settings before take-off if that feels wrong.\n- Once you're on the water you can taxi the plane like a boat for short distances, which helps line up with a marker.\n## Choices\nBeebom says the way you handle the gunmen at the pickup feeds Jason's Criminal Profile, and that killing or downing them with a gun moves him toward a harder rank. We haven't seen a second guide confirm this, and we don't know what the profile changes later.\n## Rewards and unlocks\nBeebom reports $500 paid into BuckMe and the Focus ability unlocked for both Jason and Lucia. VGC doesn't mention either, so treat both as not yet confirmed. Beebom also flags a missable Meditation Spot that opens straight after this job.\n## What happens (spoilers)\n!! As you land back home, Lucia's parole officer turns up unannounced, which is why the drugs have to vanish into the washing machine.\n!! Lucia talks the officer round about where she has been, with Jason backing her up, and the visit passes.\n## Next\nDay Release and Clear Skies both open after this job, and you can play them in either order. Swamped follows once both are done.\n## A note on order\nGuides number these jobs differently: Beebom calls Down to Earth the 13th mission, VGC and Game Rant the 14th. We keep following GTABase's chronological order.",
+      "unconfirmed": true,
+      "sources": [
+        {
+          "name": "VGC: Down to Earth walkthrough",
+          "url": "https://www.videogameschronicle.com/guide/gta-6-down-to-earth-mission-walkthrough/"
+        },
+        {
+          "name": "Beebom: Down to Earth mission guide",
+          "url": "https://beebom.com/gta-6-down-to-earth-mission/"
+        },
+        {
+          "name": "GTABase: story missions list",
+          "url": "https://www.gtabase.com/gta-6/missions/"
+        },
+        {
+          "name": "Game Rant: main story missions list",
+          "url": "https://gamerant.com/gta-6-main-story-missions-chapters-list/"
+        }
+      ]
+    },
+    {
+      "slug": "gta-6-mission-day-release",
+      "section": "crime-beat",
+      "kind": "mission",
+      "order": 15,
+      "date": "2026-11-27",
+      "title": "GTA 6 Day Release walkthrough: the yacht party, the race and Nine1Nine",
+      "dek": "Mattia and Kat take Jason and Lucia out for a day on the water and a night in Vice City. No combat, but plenty of small chances to raise the couple's relationship.",
+      "facts": [
+        [
+          "Mission",
+          "Chapter 1"
+        ],
+        [
+          "Giver",
+          "Mattia Tauro and Kat"
+        ],
+        [
+          "Play as",
+          "Lucia Caminos for most of it, Jason Duval at the start and end"
+        ],
+        [
+          "Where",
+          "Rusty Anchor, Key Lento; a yacht offshore; Nine1Nine club, Vice City"
+        ],
+        [
+          "Choices",
+          "Jet ski solo or with Jason; Lucia's dress; Mattia's drugs (one guide)"
+        ],
+        [
+          "Reward",
+          "Lucia keeps the dress you pick"
+        ],
+        [
+          "Next",
+          "Clear Skies, then Swamped"
+        ]
+      ],
+      "body": "Day Release is a night out rather than a job. It's mostly Lucia's mission, and it's the best early chance to build the Jason and Lucia relationship, so take the optional prompts.\n## How to start\nIt opens after Down to Earth. Beebom says Lucia texts Jason about a party with Mattia and Kat; once you reply, a Meet Mattia & Kat marker appears at the Rusty Anchor bar in north Key Lento. Order a drink at the bar to start the scene.\n## Objectives\n- Meet the group at the Rusty Anchor, then take the speedboat out to the yacht.\n- On board, choose whether Lucia rides a jet ski on her own or with Jason. Riding together raises the relationship.\n- Follow Mattia on the jet skis, use the ramps, then race him back to the yacht.\n- Shoot the champagne bottles Mattia throws, using focus mode. Guides agree your score only changes a line of dialogue.\n- Pick one of Kat's dresses. It's cosmetic, and there's no wrong answer.\n- Find Mattia on the lowest deck. Ask guests if you can't spot him.\n- Race Mattia's supercar into Vice City. He makes a stop on the way; guides disagree whether it's a motel, a hotel or a fuel stop. Destroying your car is the only way to fail here.\n- Follow him into the Nine1Nine club. Stay in the VIP area, talk to Mattia, and dance with Jason.\n- When the party moves upstairs, go through the door at the end of the hallway as Lucia and make the escape with the group. The mission ends the next morning back in Key Lento as Jason.\n## Relationship tips\n- Ride the jet ski with Jason.\n- Use the dance flourish button while dancing with Jason in the club.\n- Hold hands with Jason when prompted, at the club and during the escape.\n- VGC says taking a photo of the yacht's bow also gives a small boost.\n## Missables\n- GTABase says a couple by the railing on the yacht's middle deck give Lucia a pair of sunglasses, and that you can't get them later.\n- VGC mentions documents below deck you can photograph and send to Cal. It's optional and we don't yet know if it leads anywhere.\n## Not yet confirmed\nBeebom treats Mattia's offer of drugs at the club as a choice you can turn down; VGC has you take them, and GTABase doesn't mention it. We haven't seen any guide report a lasting effect either way.\n## What happens (spoilers)\n!! The day starts with Mattia's man Burim taking off Lucia's ankle monitor, which is where the title comes from.\n!! When Lucia checks on Kat during the party, she learns more about Kat's pregnancy.\n!! The night ends with security closing in on the apartment above the club and the whole group jumping from the balcony into a pool to get away.\n!! Beebom says the night out ends with Mattia offering the couple work.\n## Next\nClear Skies, if you haven't done it yet. Swamped opens once both are finished.",
+      "unconfirmed": true,
+      "sources": [
+        {
+          "name": "VGC: Day Release walkthrough",
+          "url": "https://www.videogameschronicle.com/guide/gta-6-day-release-mission-walkthrough/"
+        },
+        {
+          "name": "Beebom: Day Release mission guide",
+          "url": "https://beebom.com/gta-6-day-release-mission/"
+        },
+        {
+          "name": "GTABase: Day Release",
+          "url": "https://www.gtabase.com/gta-6/missions/day-release"
+        },
+        {
+          "name": "GTABase: story missions list",
+          "url": "https://www.gtabase.com/gta-6/missions/"
+        }
+      ]
+    },
+    {
+      "slug": "gta-6-mission-clear-skies",
+      "section": "crime-beat",
+      "kind": "mission",
+      "order": 16,
+      "date": "2026-11-27",
+      "title": "GTA 6 Clear Skies walkthrough: escorting Pilot Pete and the airstrip deal",
+      "dek": "Brian sends Jason to babysit Donnie on a smuggling flight. The plane work is easy; the deal at the second airstrip is where it goes wrong.",
+      "facts": [
+        [
+          "Mission",
+          "Chapter 1"
+        ],
+        [
+          "Giver",
+          "Donnie, with Brian Heder"
+        ],
+        [
+          "Play as",
+          "Jason Duval"
+        ],
+        [
+          "Where",
+          "Sherwin Boatworks, Southwind; two swamp airstrips"
+        ],
+        [
+          "Enemies",
+          "Final Chapter bikers"
+        ],
+        [
+          "Fail if",
+          "Donnie dies, or you wreck the plane"
+        ],
+        [
+          "Reward",
+          "$1,400 (GTABase)"
+        ],
+        [
+          "Next",
+          "Swamped"
+        ]
+      ],
+      "body": "Clear Skies is the second flying job and the first proper firefight against a biker gang. Bring a shotgun if you have one, or pick one up mid-mission.\n## How to start\nIt opens after Down to Earth. Head to Southwind, where Donnie is working on the seaplane at the boatworks; he sends you to Brian at the tiki bar nearby.\n## Objectives\n- Talk to Brian, then go back to the plane.\n- Taxi off the slipway into the water and take off. GTABase says you can try to lift off from the road, but it's riskier.\n- Fly to the intercept point and catch up with Pilot Pete's plane. Stay right above him: the idea is that air traffic control sees one aircraft, not two.\n- Escort Pete to the first airstrip.\n- Fly on to the next airstrip, land carefully and taxi into place.\n- Follow Donnie on foot to the deal. It goes bad when bikers from the Final Chapter turn up.\n- Fight from cover, then clear the building by the airstrip, and get Donnie out of it.\n- Fight your way out and hold off the bikers while Donnie gets to the plane.\n- Take one of the bikers' motorcycles and chase after him to the meeting point, then board the plane.\n- Back home, a short scene with Lucia ends the mission.\n## Tips\n- Kill the gunmen around Donnie before you reach him; guides warn the mission fails if he dies.\n- GTABase says you can take a shotgun from one of the fallen bikers if you don't have one yet.\n- The bikers leave several motorcycles at the airstrip. GTABase notes you can scan them with the WAiNK app.\n- Watch for enemies coming round the sides of the airstrip buildings; VGC says the flankers are the main threat.\n## Not yet confirmed\nThe three guides we read place the airstrips and the final meeting point in different spots, so we've left names out. GTABase lists a $1,400 payout; the others don't give one. GTABase also names a job called Building a Life right after this one, which the mission lists we checked don't include. We'll update this when more guides agree.\n## What happens (spoilers)\n!! The deal is a setup. The Final Chapter bikers are after Donnie personally, not the product, and they grab him as soon as the shooting starts.\n!! Jason finds him tied to a chair being questioned, and has to cut him loose and get him out.\n## Next\nDay Release, if you haven't played it. Swamped opens once both are done.",
+      "unconfirmed": true,
+      "sources": [
+        {
+          "name": "VGC: Clear Skies walkthrough",
+          "url": "https://www.videogameschronicle.com/guide/gta-6-clear-skies-mission-walkthrough/"
+        },
+        {
+          "name": "GTABase: Clear Skies",
+          "url": "https://www.gtabase.com/gta-6/missions/clear-skies"
+        },
+        {
+          "name": "GTA Wiki: Clear Skies",
+          "url": "https://gta.wiki/w/Clear_Skies"
+        },
+        {
+          "name": "Game Rant: main story missions list",
+          "url": "https://gamerant.com/gta-6-main-story-missions-chapters-list/"
+        }
+      ]
+    },
+    {
+      "slug": "gta-6-mission-swamped",
+      "section": "crime-beat",
+      "kind": "mission",
+      "order": 17,
+      "date": "2026-11-27",
+      "title": "GTA 6 Swamped walkthrough: the Kingfishers camp and the airboat chase",
+      "dek": "Brian takes Jason to a meeting with the Kingfishers out in the swamps. It's the biggest fight of Chapter 1 so far, ending in a helicopter and airboat chase. Spoilers are hidden.",
+      "facts": [
+        [
+          "Mission",
+          "Chapter 1"
+        ],
+        [
+          "Giver",
+          "Brian Heder"
+        ],
+        [
+          "Play as",
+          "Jason Duval"
+        ],
+        [
+          "Where",
+          "Brian's marina, Key Lento; Kingfishers camp, northwest Mariana County"
+        ],
+        [
+          "Enemies",
+          "The Kingfishers"
+        ],
+        [
+          "Choices",
+          "Whether Jason tells Lucia about Brian's news afterwards"
+        ],
+        [
+          "Reward",
+          "$1,000 (two guides)"
+        ],
+        [
+          "Next",
+          "Don Gone"
+        ]
+      ],
+      "body": "Swamped turns the Heder side of the story serious. Expect a long gunfight on foot, a stretch in a helicopter and a boat chase to finish. Stock up on ammo and armor first.\n## Before you go\n- Finish any of Donnie's optional jobs and sell any product you're holding first. A wiki guide warns some of Donnie's side content can't be done after this point.\n- Bring a rifle and grenades if you have them.\n## How to start\nFinish Day Release and Clear Skies, then meet Brian in the back room at his marina in Key Lento. VGC puts the start at the bar instead, so check both if the marker isn't obvious.\n## Objectives\n- Get in Brian's truck and drive to the Kingfishers camp in northwest Mariana County.\n- Walk through the camp with Brian to the pig pen at the far end and inspect it.\n- The meeting falls apart. Fight your way out with Brian, using cover; you don't have to kill everyone, but it's hard to get out without thinning them.\n- Clear the gunmen around the helicopter at the edge of the camp, then board it.\n- From the air, chase the Kingfishers fleeing the camp. Shoot from the helicopter and destroy their truck when prompted.\n- Jason drops into an airboat. Pull alongside the boat you're chasing and hold the jump button to cross over, then finish the last man with the on-screen prompt.\n## Tips\n- The mission fails if the Kingfishers get away or you hit the wrong person, so pick single shots from the helicopter rather than spraying. Focus mode helps.\n- A wiki guide says a shotgun is lying by some crates on the road out of the camp, and that a gunman hides behind the far float near the helicopter.\n## Choice afterwards\nBack home, a timed prompt lets Jason tell Lucia about something Brian said. GTABase and a wiki guide both say taking it raises the relationship and letting it pass gives nothing; the wiki adds it costs you a relationship level at the end of Recalibration. That second part isn't confirmed elsewhere.\n## Not yet confirmed\nVGC says taking out the last Kingfisher from the helicopter can end the chase early; the other two guides always have you finish it from the airboat. GTABase and the wiki both give $1,000, though the wiki says some players got no payout.\n## What happens (spoilers)\n!! The meeting is an ambush. Donnie is dead, and the pig pen is where Brian and Jason find what's left of him.\n!! The Kingfishers grab Lori, Brian's wife, during the escape, which is what the chase is about.\n!! Afterwards Brian says he's done with the drug business now that Donnie is gone, and Lori backs him. That retirement is the news Jason can share with Lucia.\n## Next\nDon Gone, which starts with a text from Brian about clearing out Donnie's trailer.",
+      "unconfirmed": true,
+      "sources": [
+        {
+          "name": "VGC: Swamped walkthrough",
+          "url": "https://www.videogameschronicle.com/guide/gta-6-swamped-mission-walkthrough/"
+        },
+        {
+          "name": "GTABase: Swamped",
+          "url": "https://www.gtabase.com/gta-6/missions/swamped"
+        },
+        {
+          "name": "The Games Wiki: Swamped",
+          "url": "https://thegameswiki.com/gta6/wiki/swamped"
+        },
+        {
+          "name": "Game Rant: main story missions list",
+          "url": "https://gamerant.com/gta-6-main-story-missions-chapters-list/"
         }
       ]
     }
